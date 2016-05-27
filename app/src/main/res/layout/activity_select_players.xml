@@ -1,0 +1,74 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:background="@drawable/pool_table">
+
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="Next "
+        android:id="@+id/toGameButton"
+        android:background="@android:color/transparent"
+        android:textColor="#e84242"
+        android:textSize="20dp"
+        android:layout_marginBottom="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Game Information"
+        android:id="@+id/playerNamesTextView"
+        android:textColor="#e84242"
+        android:textSize="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/player1EditText"
+        android:hint="Enter Player 1 Here"
+        android:textColorHint="#e84242"
+        android:layout_above="@+id/player1TextView"
+        android:layout_alignLeft="@+id/playerNamesTextView"
+        android:layout_alignStart="@+id/playerNamesTextView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/player2EditText"
+        android:hint="Enter Player 2 Here"
+        android:textColorHint="#e84242"
+        android:layout_below="@+id/player1TextView"
+        android:layout_alignLeft="@+id/player1EditText"
+        android:layout_alignStart="@+id/player1EditText" />
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/player1HandiPicker"
+        android:layout_below="@+id/playerNamesTextView"
+        android:layout_alignRight="@+id/playerNamesTextView"
+        android:layout_alignEnd="@+id/playerNamesTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Race To"
+        android:textColor="#e84242"
+        android:textSize="20dp"
+        android:id="@+id/player1TextView"
+        android:layout_marginRight="21dp"
+        android:layout_marginEnd="21dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/player1HandiPicker"
+        android:layout_toStartOf="@+id/player1HandiPicker" />
+</RelativeLayout>

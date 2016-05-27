@@ -1,0 +1,77 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:background="@drawable/pool_table">
+
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="Start Game"
+        android:id="@+id/toGameButton"
+        android:background="@android:color/transparent"
+        android:textColor="#e84242"
+        android:textSize="20dp"
+        android:layout_marginBottom="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Handicap Information"
+        android:id="@+id/playerNamesTextView"
+        android:textColor="#e84242"
+        android:textSize="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp" />
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/player1HandiPicker"
+        android:layout_below="@+id/playerNamesTextView"
+        android:layout_toLeftOf="@+id/toGameButton"
+        android:layout_toStartOf="@+id/toGameButton"
+        android:layout_marginRight="26dp"
+        android:layout_marginEnd="26dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#e84242"
+        android:textSize="20dp"
+        android:id="@+id/player1TextView"
+        android:layout_alignTop="@+id/player2TextView"
+        android:layout_toLeftOf="@+id/player1HandiPicker"
+        android:layout_toStartOf="@+id/player1HandiPicker"
+        android:layout_marginRight="39dp"
+        android:layout_marginEnd="39dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#e84242"
+        android:textSize="20dp"
+        android:id="@+id/player2TextView"
+        android:layout_marginLeft="46dp"
+        android:layout_marginStart="46dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/player1HandiPicker"
+        android:layout_toEndOf="@+id/player1HandiPicker" />
+
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/player2HandiPicker"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_alignTop="@+id/player1HandiPicker"
+        android:layout_toRightOf="@+id/toGameButton"
+        android:layout_toEndOf="@+id/toGameButton" />
+</RelativeLayout>

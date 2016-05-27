@@ -1,4 +1,3 @@
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,15 +6,13 @@
     tools:context=".MainActivity"
     android:background="@drawable/pool_table">
 
-
-    <Button
-        android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:text="Start Game"
-        android:id="@+id/startGameButton"
-        android:layout_centerVertical="true"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/winnerView"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:background="@android:color/transparent"
         android:textColor="#e84242"
-        android:textSize="35dp" />
+        android:layout_marginTop="97dp" />
+
 </RelativeLayout>

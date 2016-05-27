@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">PoolApp</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_select_game_type">selectGameType</string>
+    <string name="title_activity_select_players">selectPlayers</string>
+    <string name="title_activity_select_handicap">SelectHandicap</string>
+    <string name="title_activity_main_game">MainGame</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

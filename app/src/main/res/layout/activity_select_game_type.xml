@@ -1,0 +1,33 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:background="@drawable/pool_table">
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text="Race"
+        android:id="@+id/toGameButton"
+        android:background="@android:color/transparent"
+        android:textColor="#e84242"
+        android:textSize="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="57dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Type Of Game"
+        android:id="@+id/selectGameTextView"
+        android:layout_marginBottom="70dp"
+        android:textColor="#e84242"
+        android:textSize="35dp"
+        android:layout_above="@+id/toGameButton"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
